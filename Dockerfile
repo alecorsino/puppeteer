@@ -33,6 +33,8 @@ RUN set -x \
 
 
 # wait-for-it SCRIPT
+WORKDIR /waitforit
+RUN wget https://raw.githubusercontent.com/alecorsino/puppeteer/master/waitforit/wait-for-it.sh
 
 
 #FLYWAY borrowed from : https://github.com/flyway/flyway-docker/blob/master/Dockerfile
@@ -48,3 +50,4 @@ RUN apk --no-cache add openssl \
   && sed -i 's/bash/sh/' /flyway/flyway \
   && ln -s /flyway/flyway /usr/local/bin/flyway
 
+WORKDIR /
