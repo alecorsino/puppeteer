@@ -34,7 +34,8 @@ RUN set -x \
 
 # wait-for-it SCRIPT
 WORKDIR /waitforit
-RUN wget https://raw.githubusercontent.com/alecorsino/puppeteer/master/waitforit/wait-for-it.sh
+RUN wget https://raw.githubusercontent.com/alecorsino/puppeteer/master/waitforit/wait-for-it.sh \
+		&& chmod 544 wait-for-it.sh
 
 
 #FLYWAY borrowed from : https://github.com/flyway/flyway-docker/blob/master/Dockerfile
