@@ -2,4 +2,4 @@
 
 echo [RUNNING CONTAINER]
 
-docker run -it puppeteer /bin/bash
+docker run -it --rm puppeteer /bin/bash
