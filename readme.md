@@ -1,5 +1,12 @@
-## wait-for-it SCRIPT
+## PUPPETER 
+### `ENV SETUP AND ORCHESTRATION DOCKER IMAGE`
 
-I forked and left untouched this excellent script from: `https://github.com/vishnubob/wait-for-it`
+
+
+ ### wait-for-it script
+
+I forked and left untouched this excellent script from: 
+
+`https://github.com/vishnubob/wait-for-it`
 
 
